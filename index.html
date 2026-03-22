@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SignalDesk | Advanced Signals Intelligence</title>
-  
+
   <!-- Global Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +15,39 @@
   <style>
     :root {
       /* Graphite & Obsidian Elite Palette */
-      --bg-sidebar: #0A0A0B;      /* Obsidian Black */
-      --bg-main: #0A0A0B;         /* Unified Deep Base */
-      --bg-surface: #0E0E10;      /* Content Surface */
-      --bg-card: #141417;         /* Graphite Card */
-      --border: #1C1C1E;          /* Precision Edge */
+      --bg-sidebar: #0A0A0B;
+      /* Obsidian Black */
+      --bg-main: #0A0A0B;
+      /* Unified Deep Base */
+      --bg-surface: #0E0E10;
+      /* Content Surface */
+      --bg-card: #141417;
+      /* Graphite Card */
+      --border: #1C1C1E;
+      /* Precision Edge */
       --border-bright: #2C2C2E;
-      
-      --primary: #3B82F6;         /* Signal Blue */
+
+      --primary: #3B82F6;
+      /* Signal Blue */
       --primary-dim: rgba(59, 130, 246, 0.08);
-      
-      --success: #10B981;         /* Emerald Signal */
+
+      --success: #10B981;
+      /* Emerald Signal */
       --success-dim: rgba(16, 185, 129, 0.08);
-      
-      --danger: #EF4444;          /* Crimson Signal */
+
+      --danger: #EF4444;
+      /* Crimson Signal */
       --danger-dim: rgba(239, 68, 68, 0.08);
-      
-      --warning: #F59E0B;         /* Amber Signal */
-      
-      --text-main: #F4F4F5;       /* Snow White */
-      --text-muted: #A1A1AA;      /* Zinc Gray */
-      --text-dim: #52525B;        /* Muted Gray */
+
+      --warning: #F59E0B;
+      /* Amber Signal */
+
+      --text-main: #F4F4F5;
+      /* Snow White */
+      --text-muted: #A1A1AA;
+      /* Zinc Gray */
+      --text-dim: #52525B;
+      /* Muted Gray */
     }
 
     * {
@@ -301,8 +314,13 @@
       font-weight: 600;
     }
 
-    .trend-pos { color: var(--success); }
-    .trend-neg { color: var(--danger); }
+    .trend-pos {
+      color: var(--success);
+    }
+
+    .trend-neg {
+      color: var(--danger);
+    }
 
     /* Executive Intelligence Unit */
     .intel-engine {
@@ -392,12 +410,19 @@
     }
 
     @keyframes drawLine {
-      to { stroke-dashoffset: 0; }
+      to {
+        stroke-dashoffset: 0;
+      }
     }
 
     @keyframes fadeInArea {
-      from { opacity: 0; }
-      to { opacity: 0.15; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0.15;
+      }
     }
 
     .chart-grid-line {
@@ -428,7 +453,9 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .signal-item:last-child { border-bottom: none; }
+    .signal-item:last-child {
+      border-bottom: none;
+    }
 
     .signal-info {
       display: flex;
@@ -501,7 +528,9 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .feed-entry:last-child { border-bottom: none; }
+    .feed-entry:last-child {
+      border-bottom: none;
+    }
 
     .entry-header {
       display: flex;
@@ -531,289 +560,319 @@
     }
 
     @keyframes revealUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
-    ::-webkit-scrollbar { width: 4px; }
-    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 10px;
+    }
   </style>
 </head>
+
 <body>
 
-<div class="app">
+  <div class="app">
 
-  <!-- Intelligence Hub Sidebar -->
-  <aside class="sidebar">
-    <div class="sidebar-header">
-      <div class="brand-logo">
-        <i data-lucide="command"></i>
-      </div>
-      <span class="brand-name">SignalDesk</span>
-    </div>
-
-    <!-- Precision Search -->
-    <div class="sidebar-search">
-      <i data-lucide="search"></i>
-      <input type="text" class="sidebar-search-input" placeholder="Execute command..." />
-    </div>
-
-    <nav class="nav-list">
-      <div class="nav-section-label">Central Intelligence</div>
-      <div class="nav-link active">
-        <i data-lucide="monitor"></i>
-        <span>Executive Dashboard</span>
-      </div>
-      <div class="nav-link">
-        <i data-lucide="bar-chart-3"></i>
-        <span>Signals Analysis</span>
-      </div>
-      <div class="nav-link">
-        <i data-lucide="globe-2"></i>
-        <span>Global Market Feed</span>
-      </div>
-      <div class="nav-link">
-        <i data-lucide="shield-alert"></i>
-        <span>Risk Assessment</span>
-      </div>
-
-      <div class="nav-section-label">Enterprise Entities</div>
-      <div class="nav-link">
-        <i data-lucide="briefcase"></i>
-        <span>Global Logistics Org</span>
-      </div>
-      <div class="nav-link">
-        <i data-lucide="package-search"></i>
-        <span>Product Quality Unit</span>
-      </div>
-      <div class="nav-link">
-        <i data-lucide="database"></i>
-        <span>Aggregated Signals</span>
-      </div>
-    </nav>
-
-    <div class="sidebar-footer">
-      <div class="nav-link">
-        <i data-lucide="sliders"></i>
-        <span>Console Settings</span>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Principal Surface -->
-  <div class="main-console">
-
-    <!-- Unified Nav Header -->
-    <header class="global-nav">
-      <div class="path-indicator">
-        <span class="path-segment">Enterprise</span>
-        <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
-        <span class="path-segment">Global Intelligence</span>
-        <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
-        <span class="path-current">Executive Overview</span>
-      </div>
-
-      <div class="global-actions">
-        <div class="status-indicator">
-          <div style="width: 6px; height: 6px; background: var(--success); border-radius: 50%;"></div>
-          <span>ENGINE ONLINE</span>
+    <!-- Intelligence Hub Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">
+          <i data-lucide="command"></i>
         </div>
-        <div style="width: 1px; height: 16px; background: var(--border);"></div>
-        <i data-lucide="bell-ring" style="width: 18px; height: 18px; color: var(--text-muted); cursor: pointer;"></i>
-        <div style="width: 32px; height: 32px; background: #27272A; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800;">JD</div>
-      </div>
-    </header>
-
-    <!-- Dynamic Workspace -->
-    <main class="workspace">
-
-      <div class="view-title reveal">
-        <h1>Global Signals Intelligence</h1>
-        <p>Currently processing 1.48M strategic data points across all enterprise nodes.</p>
+        <span class="brand-name">SignalDesk</span>
       </div>
 
-      <!-- High-Resolution Metrics -->
-      <div class="metrics-grid reveal" style="animation-delay: 0.1s;">
-        <div class="metric-card">
-          <div class="metric-head">
-            <span>Aggregated Signals</span>
-            <i data-lucide="activity"></i>
-          </div>
-          <div class="metric-value">1.48M</div>
-          <div class="metric-footer trend-pos">
-            <i data-lucide="trending-up" style="width: 14px; height: 14px;"></i>
-            <span>+18.4% Velocity</span>
-          </div>
+      <!-- Precision Search -->
+      <div class="sidebar-search">
+        <i data-lucide="search"></i>
+        <input type="text" class="sidebar-search-input" placeholder="Execute command..." />
+      </div>
+
+      <nav class="nav-list">
+        <div class="nav-section-label">Central Intelligence</div>
+        <div class="nav-link active">
+          <i data-lucide="monitor"></i>
+          <span>Executive Dashboard</span>
+        </div>
+        <div class="nav-link">
+          <i data-lucide="bar-chart-3"></i>
+          <span>Signals Analysis</span>
+        </div>
+        <div class="nav-link">
+          <i data-lucide="globe-2"></i>
+          <span>Global Market Feed</span>
+        </div>
+        <div class="nav-link">
+          <i data-lucide="shield-alert"></i>
+          <span>Risk Assessment</span>
         </div>
 
-        <div class="metric-card">
-          <div class="metric-head">
-            <span>Sentiment Integrity</span>
-            <i data-lucide="user-check"></i>
-          </div>
-          <div class="metric-value">86.4%</div>
-          <div class="metric-footer trend-pos">
-            <span>Above Benchmark</span>
-          </div>
+        <div class="nav-section-label">Enterprise Entities</div>
+        <div class="nav-link">
+          <i data-lucide="briefcase"></i>
+          <span>Global Logistics Org</span>
         </div>
-
-        <div class="metric-card">
-          <div class="metric-head">
-            <span>Processing Speed</span>
-            <i data-lucide="zap"></i>
-          </div>
-          <div class="metric-value">0.8s</div>
-          <div class="metric-footer trend-pos">
-            <span>Ultra Low Latency</span>
-          </div>
+        <div class="nav-link">
+          <i data-lucide="package-search"></i>
+          <span>Product Quality Unit</span>
         </div>
-
-        <div class="metric-card">
-          <div class="metric-head">
-            <span>Operational Flux</span>
-            <i data-lucide="alert-octagon"></i>
-          </div>
-          <div class="metric-value">14.2%</div>
-          <div class="metric-footer trend-neg">
-            <i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i>
-            <span>Anomaly Predicted</span>
-          </div>
+        <div class="nav-link">
+          <i data-lucide="database"></i>
+          <span>Aggregated Signals</span>
         </div>
+      </nav>
 
-        <!-- Intelligence Unit Summary -->
-        <div class="intel-engine">
-          <div class="intel-icon">
-            <i data-lucide="cpu" style="width: 30px; height: 30px;"></i>
-          </div>
-          <div class="intel-body">
-            <h3>Strategic Anomaly: <strong>Logistics Network Friction</strong></h3>
-            <p>
-              Autonomous patterns have identified a <strong>38% escalation</strong> in delivery latency across the Global North distribution channels. Current analysis suggests prioritizing a transition to <strong>verified alternate logistics partners</strong> to maintain cross-region SLA commitments.
-            </p>
-          </div>
-          <div style="margin-left: auto;">
-            <button class="btn-action btn-solid">Execute Protocol</button>
-          </div>
+      <div class="sidebar-footer">
+        <div class="nav-link">
+          <i data-lucide="sliders"></i>
+          <span>Console Settings</span>
         </div>
       </div>
+    </aside>
 
-      <!-- Structural Analysis -->
-      <div class="analytics-row reveal" style="animation-delay: 0.2s;">
-        <div class="metric-card chart-panel">
-          <div class="metric-head">
-            <span>Topology Trend Analysis</span>
-            <span style="font-size: 10px; color: var(--text-dim);">Real-time signals</span>
-          </div>
-          <div class="chart-container">
-            <svg class="chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="var(--primary)" />
-                  <stop offset="100%" stop-color="transparent" />
-                </linearGradient>
-              </defs>
-              <!-- Grid Lines -->
-              <line class="chart-grid-line" x1="0" y1="50" x2="600" y2="50" />
-              <line class="chart-grid-line" x1="0" y1="100" x2="600" y2="100" />
-              <line class="chart-grid-line" x1="0" y1="150" x2="600" y2="150" />
+    <!-- Principal Surface -->
+    <div class="main-console">
 
-              <!-- High-Fidelity Signal Path -->
-              <path class="chart-area" d="M0,180 L50,140 L120,160 L180,100 L250,110 L320,60 L400,90 L480,40 L550,70 L600,30 L600,200 L0,200 Z" />
-              <path class="chart-line" d="M0,180 L50,140 L120,160 L180,100 L250,110 L320,60 L400,90 L480,40 L550,70 L600,30" />
-              
-              <!-- Points of Interest (Anomalies) -->
-              <circle class="chart-dot" cx="480" cy="40" style="animation-delay: 2.2s;" />
-              <circle class="chart-dot" cx="600" cy="30" style="animation-delay: 2.5s;" />
-            </svg>
-          </div>
+      <!-- Unified Nav Header -->
+      <header class="global-nav">
+        <div class="path-indicator">
+          <span class="path-segment">Enterprise</span>
+          <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
+          <span class="path-segment">Global Intelligence</span>
+          <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
+          <span class="path-current">Executive Overview</span>
         </div>
 
-        <div class="metric-card">
-          <div class="metric-head">Regional Flux Risk</div>
-          <div class="signals-list">
-            <div class="signal-item">
-              <div class="signal-info"><i data-lucide="truck"></i><span>Logistics SLA</span></div>
-              <span class="signal-status-label">Anomaly</span>
+        <div class="global-actions">
+          <div class="status-indicator">
+            <div style="width: 6px; height: 6px; background: var(--success); border-radius: 50%;"></div>
+            <span>ONLINE</span>
+          </div>
+          <div style="width: 1px; height: 16px; background: var(--border);"></div>
+          <i data-lucide="bell-ring" style="width: 18px; height: 18px; color: var(--text-muted); cursor: pointer;"></i>
+          <div
+            style="width: 32px; height: 32px; background: #27272A; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800;">
+            JD</div>
+        </div>
+      </header>
+
+      <!-- Dynamic Workspace -->
+      <main class="workspace">
+
+        <div class="view-title reveal">
+          <h1>Global Signals Intelligence</h1>
+          <p>Currently processing 1.48M strategic data points across all enterprise nodes.</p>
+        </div>
+
+        <!-- High-Resolution Metrics -->
+        <div class="metrics-grid reveal" style="animation-delay: 0.1s;">
+          <div class="metric-card">
+            <div class="metric-head">
+              <span>Aggregated Signals</span>
+              <i data-lucide="activity"></i>
             </div>
-            <div class="signal-item">
-              <div class="signal-info"><i data-lucide="box"></i><span>Inventory Integrity</span></div>
-              <span class="signal-status-label" style="background: var(--success-dim); color: var(--success);">Stable</span>
+            <div class="metric-value">1.48M</div>
+            <div class="metric-footer trend-pos">
+              <i data-lucide="trending-up" style="width: 14px; height: 14px;"></i>
+              <span>+18.4% Velocity</span>
             </div>
-            <div class="signal-item">
-              <div class="signal-info"><i data-lucide="credit-card"></i><span>Signal Latency</span></div>
-              <span class="signal-status-label" style="background: var(--success-dim); color: var(--success);">Stable</span>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-head">
+              <span>Sentiment Integrity</span>
+              <i data-lucide="user-check"></i>
+            </div>
+            <div class="metric-value">86.4%</div>
+            <div class="metric-footer trend-pos">
+              <span>Above Benchmark</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-head">
+              <span>Processing Speed</span>
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="metric-value">0.8s</div>
+            <div class="metric-footer trend-pos">
+              <span>Ultra Low Latency</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-head">
+              <span>Operational Flux</span>
+              <i data-lucide="alert-octagon"></i>
+            </div>
+            <div class="metric-value">14.2%</div>
+            <div class="metric-footer trend-neg">
+              <i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i>
+              <span>Anomaly Predicted</span>
+            </div>
+          </div>
+
+          <!-- Intelligence Unit Summary -->
+          <div class="intel-engine">
+            <div class="intel-icon">
+              <i data-lucide="cpu" style="width: 30px; height: 30px;"></i>
+            </div>
+            <div class="intel-body">
+              <h3>Strategic Anomaly: <strong>Logistics Network Friction</strong></h3>
+              <p>
+                Autonomous patterns have identified a <strong>38% escalation</strong> in delivery latency across the
+                Global North distribution channels. Current analysis suggests prioritizing a transition to
+                <strong>verified alternate logistics partners</strong> to maintain cross-region SLA commitments.
+              </p>
+            </div>
+            <div style="margin-left: auto;">
+              <button class="btn-action btn-solid">Execute Protocol</button>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Tactical Module Header -->
-      <div class="view-title reveal" style="animation-delay: 0.3s; margin-top: 48px; margin-bottom: 24px;">
-        <h2 style="font-size: 20px; font-weight: 800;">Strategic Interventions</h2>
-      </div>
+        <!-- Structural Analysis -->
+        <div class="analytics-row reveal" style="animation-delay: 0.2s;">
+          <div class="metric-card chart-panel">
+            <div class="metric-head">
+              <span>Topology Trend Analysis</span>
+              <span style="font-size: 10px; color: var(--text-dim);">Real-time signals</span>
+            </div>
+            <div class="chart-container">
+              <svg class="chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--primary)" />
+                    <stop offset="100%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <!-- Grid Lines -->
+                <line class="chart-grid-line" x1="0" y1="50" x2="600" y2="50" />
+                <line class="chart-grid-line" x1="0" y1="100" x2="600" y2="100" />
+                <line class="chart-grid-line" x1="0" y1="150" x2="600" y2="150" />
 
-      <div class="analytics-row reveal" style="animation-delay: 0.3s;">
-        <div class="metric-card" style="display: flex; gap: 24px; align-items: flex-start;">
-          <div style="width: 50px; height: 50px; background: #1B1F1C; border: 1px solid #224D28; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--success); flex-shrink: 0;">
-            <i data-lucide="refresh-cw"></i>
-          </div>
-          <div>
-            <h4 style="font-size: 16px; margin-bottom: 8px; font-weight: 700;">Reroute Logistics Network</h4>
-            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;">Detected a critical processing bottleneck at Global Node-4. Activating reroute will restore signal integrity to 99% within 2 hours.</p>
-            <button class="btn-action btn-solid">Activate Protocol</button>
-          </div>
-        </div>
-        <div class="metric-card" style="display: flex; gap: 24px; align-items: flex-start;">
-          <div style="width: 50px; height: 50px; background: #1B1D1F; border: 1px solid #2D3748; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
-            <i data-lucide="shield-check"></i>
-          </div>
-          <div>
-            <h4 style="font-size: 16px; margin-bottom: 8px; font-weight: 700;">Audit Data Integrity</h4>
-            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;">Automated integrity scan found minor flux in regional signals. Initiating a full diagnostic audit recommended.</p>
-            <button class="btn-action btn-outline">Start Audit</button>
-          </div>
-        </div>
-      </div>
+                <!-- High-Fidelity Signal Path -->
+                <path class="chart-area"
+                  d="M0,180 L50,140 L120,160 L180,100 L250,110 L320,60 L400,90 L480,40 L550,70 L600,30 L600,200 L0,200 Z" />
+                <path class="chart-line"
+                  d="M0,180 L50,140 L120,160 L180,100 L250,110 L320,60 L400,90 L480,40 L550,70 L600,30" />
 
-      <!-- Signal Intelligence Stream -->
-      <div class="metric-card reveal" style="animation-delay: 0.4s; margin-bottom: 60px;">
-        <div class="metric-head">Signals Intelligence Feed (SIGINT)</div>
-        <div class="feed-signals">
-          <!-- Entry 1 -->
-          <div class="feed-entry">
-            <div class="entry-header">
-              <div class="entry-source">
-                <i data-lucide="database" style="width: 15px; height: 15px; color: var(--primary);"></i>
-                <span>Node: <span class="corp-tag">Global Logistics Org</span></span>
-                <span class="sentiment-critical" style="font-size: 11px; margin-left: 8px;">#CRITICAL-82924</span>
+                <!-- Points of Interest (Anomalies) -->
+                <circle class="chart-dot" cx="480" cy="40" style="animation-delay: 2.2s;" />
+                <circle class="chart-dot" cx="600" cy="30" style="animation-delay: 2.5s;" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-head">Regional Flux Risk</div>
+            <div class="signals-list">
+              <div class="signal-item">
+                <div class="signal-info"><i data-lucide="truck"></i><span>Logistics SLA</span></div>
+                <span class="signal-status-label">Anomaly</span>
               </div>
-              <span style="font-size: 11px; color: var(--text-dim);">18m ago</span>
-            </div>
-            <p class="entry-body">"Operational latency escalating in regional distribution. Immediate impact to customer brand health score predicted: -3.8 points."</p>
-          </div>
-
-          <!-- Entry 2 -->
-          <div class="feed-entry">
-            <div class="entry-header">
-              <div class="entry-source">
-                <i data-lucide="star" style="width: 15px; height: 15px; color: var(--warning);"></i>
-                <span>Node: <span class="corp-tag">Quality Unit</span></span>
-                <span style="color: var(--text-dim); font-size: 11px; margin-left: 8px;">#HEALTHY-82912</span>
+              <div class="signal-item">
+                <div class="signal-info"><i data-lucide="box"></i><span>Inventory Integrity</span></div>
+                <span class="signal-status-label"
+                  style="background: var(--success-dim); color: var(--success);">Stable</span>
               </div>
-              <span style="font-size: 11px; color: var(--text-dim);">1h ago</span>
+              <div class="signal-item">
+                <div class="signal-info"><i data-lucide="credit-card"></i><span>Signal Latency</span></div>
+                <span class="signal-status-label"
+                  style="background: var(--success-dim); color: var(--success);">Stable</span>
+              </div>
             </div>
-            <p class="entry-body">"Quality benchmarks across secondary nodes have exceeded quarterly targets. Market integrity maintaining optimal performance trajectory."</p>
           </div>
         </div>
-      </div>
 
-    </main>
+        <!-- Tactical Module Header -->
+        <div class="view-title reveal" style="animation-delay: 0.3s; margin-top: 48px; margin-bottom: 24px;">
+          <h2 style="font-size: 20px; font-weight: 800;">Strategic Interventions</h2>
+        </div>
+
+        <div class="analytics-row reveal" style="animation-delay: 0.3s;">
+          <div class="metric-card" style="display: flex; gap: 24px; align-items: flex-start;">
+            <div
+              style="width: 50px; height: 50px; background: #1B1F1C; border: 1px solid #224D28; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--success); flex-shrink: 0;">
+              <i data-lucide="refresh-cw"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 16px; margin-bottom: 8px; font-weight: 700;">Reroute Logistics Network</h4>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;">Detected a
+                critical processing bottleneck at Global Node-4. Activating reroute will restore signal integrity to 99%
+                within 2 hours.</p>
+              <button class="btn-action btn-solid">Activate Protocol</button>
+            </div>
+          </div>
+          <div class="metric-card" style="display: flex; gap: 24px; align-items: flex-start;">
+            <div
+              style="width: 50px; height: 50px; background: #1B1D1F; border: 1px solid #2D3748; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 16px; margin-bottom: 8px; font-weight: 700;">Audit Data Integrity</h4>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;">Automated
+                integrity scan found minor flux in regional signals. Initiating a full diagnostic audit recommended.</p>
+              <button class="btn-action btn-outline">Start Audit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signal Intelligence Stream -->
+        <div class="metric-card reveal" style="animation-delay: 0.4s; margin-bottom: 60px;">
+          <div class="metric-head">Signals Intelligence Feed (SIGINT)</div>
+          <div class="feed-signals">
+            <!-- Entry 1 -->
+            <div class="feed-entry">
+              <div class="entry-header">
+                <div class="entry-source">
+                  <i data-lucide="database" style="width: 15px; height: 15px; color: var(--primary);"></i>
+                  <span>Node: <span class="corp-tag">Global Logistics Org</span></span>
+                  <span class="sentiment-critical" style="font-size: 11px; margin-left: 8px;">#CRITICAL-82924</span>
+                </div>
+                <span style="font-size: 11px; color: var(--text-dim);">18m ago</span>
+              </div>
+              <p class="entry-body">"Operational latency escalating in regional distribution. Immediate impact to
+                customer brand health score predicted: -3.8 points."</p>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="feed-entry">
+              <div class="entry-header">
+                <div class="entry-source">
+                  <i data-lucide="star" style="width: 15px; height: 15px; color: var(--warning);"></i>
+                  <span>Node: <span class="corp-tag">Quality Unit</span></span>
+                  <span style="color: var(--text-dim); font-size: 11px; margin-left: 8px;">#HEALTHY-82912</span>
+                </div>
+                <span style="font-size: 11px; color: var(--text-dim);">1h ago</span>
+              </div>
+              <p class="entry-body">"Quality benchmarks across secondary nodes have exceeded quarterly targets. Market
+                integrity maintaining optimal performance trajectory."</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
   </div>
-</div>
 
-<script>
-  lucide.createIcons();
-</script>
+  <script>
+    lucide.createIcons();
+  </script>
 
 </body>
+
 </html>

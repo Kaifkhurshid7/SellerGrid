@@ -1,39 +1,39 @@
-# 📡 SignalDesk | Elite Enterprise Intelligence
+# 📡 SignalDesk | Advanced Signals Intelligence
 
-> **“The Command Center for Global Enterprise Signals.”**
+> **“The Command Center for Global Enterprise Intelligence.”**
 
-SignalDesk is an elite, high-fidelity B2B SaaS intelligence hub designed for Fortune 500 enterprises. It provides a centralized command interface to monitor, analyze, and neutralize operational risks across global marketplaces like **Meta Marketplace**, **Amazon Retail**, and **Google Merchant**.
+SignalDesk is an elite, high-fidelity signals intelligence hub designed for global enterprise operations. It provides a centralized command interface to monitor, analyze, and neutralize operational risks across complex organizational nodes.
 
 ---
 
 ## 🧩 The Strategic Challenge
 
-For global giants, customer sentiment isn't just feedback—it's a critical operational signal. **SignalDesk** processes millions of data points to provide "Signals Intelligence" (SIGINT) for supply chain integrity, logistics velocity, and brand health.
+In the modern enterprise, signal fragmentation is the primary source of operational friction. **SignalDesk** processes millions of unstructured data points to provide "Signals Intelligence" (SIGINT) for supply chain integrity, logistics velocity, and global brand health.
 
 ---
 
-## 💡 Elite Capabilities
+## 💡 Engine Capabilities
 
-- **🚀 Signals Console:** Real-time stream of high-integrity consumer signals.
-- **📊 Intelligence Topology:** 3D-style visualization of sentiment trends and market shifts.
-- **🏢 Multi-Org Management:** Native support for conglomerate structures (Meta, Amazon, etc.).
-- **🚨 Tactical Interventions:** High-priority response protocols for regional logistics anomalies.
-- **🔮 Predictive Risk Engine:** Advanced forecasting for SLA breaches and inventory friction.
+- **🚀 Signals Console:** Real-time stream of high-integrity operational signals.
+- **📊 Topology Trends:** Advanced visualization of sentiment topology and market shifts.
+- **🏢 Node Management:** Native support for complex organizational structures and entities.
+- **🚨 Tactical Interventions:** High-priority response protocols for regional anomalies.
+- **🔮 Flux Prediction:** Predictive modeling for SLA breaches and inventory friction.
 
 ---
 
-## 🎨 Design Philosophy: "Enterprise Noir"
+## 🎨 Design Philosophy: "Graphite & Obsidian"
 
-SignalDesk adheres to a "Noir" design system, optimized for high-stakes operational environments:
+SignalDesk follows a minimalist, high-fidelity design system optimized for high-stakes operational environments:
 
-- **Aesthetic:** Minimalist, high-contrast, deep-surface architecture.
+- **Aesthetic:** High-contrast, deep-surface architecture with obsidian accents.
 - **Core Palette:** 
-  - `Base Noir`: #020617 (Deep Obsidian)
-  - `Signal Blue`: #3B82F6 (Primary Interactive)
-  - `Anomaly Red`: #EF4444 (Critical Risk)
+  - `Obsidian Base`: #0A0A0B (Deep Noir)
+  - `Graphite Surface`: #141417 (Card Layer)
+  - `Signal Blue`: #3B82F6 (Interactive Primary)
 - **Typography:** **Inter** (800-400 weight) for extreme legibility.
 - **Iconography:** **Lucide SVG** for a crisp, functional visual language.
-- **Components:** Border-first geometry (1px solid #1F2937), zero-shadow elevation, and precise whitespace management.
+- **Geometry:** Border-first architecture (1px solid #1C1C1E) and zero-shadow elevation.
 
 ---
 

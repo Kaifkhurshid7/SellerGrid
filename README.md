@@ -66,3 +66,4 @@ Simply open `index.html` in any modern web browser to view the interactive dashb
 ---
 
 *This project was created with a focus on visual excellence and product-market fit.*
+# SellerGrid
